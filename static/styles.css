@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    animation: slideInDown 1.5s ease-in-out;
+}
+
+nav {
+    background: #2a2a3b;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    animation: slideInTop 1.2s ease-out;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background: #4a90e2;
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.section {
+    margin-bottom: 60px;
+    padding: 20px;
+    background: #2a2a3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a90e2;
+    position: relative;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #4a90e2;
+    margin-top: 10px;
+    animation: expandWidth 1.5s ease-in-out;
+}
+
+.project, .experience {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4a90e2;
+    background: #33334d;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover, .experience:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: #2a2a3b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #4a90e2;
+    animation: fadeIn 2s ease-in;
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.projectLink {
+    text-decoration: none;
+    color: white;
+}
+
+.projectLink:hover {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+#projectimgcontainer {
+    border: 1px white solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#projectimgcontainer img {
+    border-radius: 10px;
+    border: #4a90e2 solid 2px;
+    height: 300px;
+}
+
+#contactimgcontainer ul {
+    padding-left: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+#contactimgcontainer li {
+    display: block;
+    list-style-type: none;
+}
+
+#contactimgcontainer li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10%;
+    width: auto;
+    margin-right: 0.5%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#contactimgcontainer a {
+    color: white;
+    text-decoration: none;
+}
+
+#contactimgcontainer a:hover {
+    color: #4a90e2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInTop {
+    from { opacity: 0; transform: translateY(-100%); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes expandWidth {
+    from { width: 0; }
+    to { width: 50px; }
+}

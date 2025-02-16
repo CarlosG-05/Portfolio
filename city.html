@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter City</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="../static/js/weather.js" defer></script>
+</head>
+<body id="mainBody">
+    <img src="" class="bg-image" id="backdrop">
+    <div class="city-input-container" id="cityInput1">
+        <div id="inputCity">
+            <h1>Enter City</h1>
+            <form id="city-form1">
+                <input type="text" id="city-input" placeholder="Enter city name" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="which-city">
+            <h1>Which</h1>
+            <h1 id="whichText">Which City</h1>
+            <form id="city-form2">
+                <select name="dropdown" id="options">
+                    <option value="none">Select Specific City</option>
+                </select>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <section id="weatherApp">
+        <div class="weather-container">
+            <div class="header">
+                <h1 id="locations">New York</h1>
+                <p id="date">February 14, 2025</p>
+            </div>
+    
+            <div class="main-info">
+                <div class="temperature">
+                    <h2 id="conditions">Sunny</h2>
+                </div>
+    
+                <div class="icon">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="weather icon">
+                </div>
+            </div>
+    
+            <div class="weather-cards">
+                <div class="card" id="temperature-card">
+                    <h3>Temperature</h3>
+                    <p id="temp">15°C</p>
+                </div>
+    
+                <div class="card" id="humidity-card">
+                    <h3>Humidity</h3>
+                    <p id="humidity">60%</p>
+                </div>
+    
+                <div class="card" id="rain-card">
+                    <h3>Rain</h3>
+                    <p id="rain">No Rain</p>
+                </div>
+    
+                <div class="card" id="wind-card">
+                    <h3>Wind</h3>
+                    <p id="wind">5 km/h</p>
+                </div>
+            </div>
+        </div>
+        <form id="homeForm">
+            <button type="submit" id="homeButtom">New City</button>
+        </form>
+    </section>
+</body>
+</html>
