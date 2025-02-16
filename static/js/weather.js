@@ -98,14 +98,14 @@ function toF(celsius) {
 }
 
 function startUp() {
-    document.getElementById('backdrop').display = 'none';
+    document.getElementById('backdrop').style.display = 'none';
     weatherApp.style.display = 'none';
     specificCity.style.display = 'none';
     console.log("done");
 }
 
 function switchPage() {
-    document.getElementById('backdrop').display = 'block';
+    document.getElementById('backdrop').style.display = 'block';
     weatherApp.style.display = 'block';
     startPage.style.display = 'none';
     console.log("done");
@@ -126,7 +126,7 @@ function getDate() {
 }
 
 function reset() {
-    document.getElementById('backdrop').display = 'none';
+    document.getElementById('backdrop').style.display = 'none';
     specificCity.style.display = 'none';
     weatherApp.style.display = 'none';
     startPage.style.display = 'block';
