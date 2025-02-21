@@ -4,7 +4,7 @@ Welcome to my personal portfolio website repository. This project showcases my s
 
 ## Introduction
 
-This portfolio website serves as a platform to highlight my professional journey, including projects I've worked on, my technical skills, and other relevant experiences. It's designed to provide visitors with a comprehensive overview of my work and capabilities.
+Developed a user-friendly web application that provides real-time weather data for any city globally. The app allows users to enter the name of a city and view live weather updates, including temperature, humidity, wind speed, and weather conditions (e.g., sunny, rainy, cloudy). The app integrates with a weather API to fetch and display accurate data in an easy-to-read format. Focused on clean UI design and responsive functionality to ensure a seamless experience across different devices.
 
 ## Features
 
